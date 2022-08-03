@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Flex</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+
+      <form action="">
+        <fieldset> <!-- PERSONALIZAR HAMBURGUESA -->
+<h1>Personaliza tu Hamburguesa</h1>
+<section>
+  <h2>Ingredientes</h2>
+<ul>
+  <li>
+    <label for="queso">Queso</label>
+    <input type="checkbox" id="queso">
+  </li>
+  <li>
+  <label for="pimiento">Pimiento</label>
+    <input type="checkbox" id="pimiento">
+  </li>
+  <li>
+    <label for="cebolla">Cebolla</label>
+    <input type="checkbox" id="cebolla">
+  </li>
+  <li>
+    <label for="jamon">Jamón</label>
+    <input type="checkbox" id="jamon">
+  </li>
+  <li>
+    <label for="huevo">Huevo</label>
+    <input type="checkbox" id="huevo">
+  </li>
+</ul>
+</section>
+<section>
+  <h2>Tamaño</h2>
+  <ul>
+    <li>
+        <label for="pequeña">Pequeña</label>
+        <input type="radio" type="radio" name="tamaño" id="pequeña">
+    </li>
+    <li>
+      <label for="mediana">Mediana</label>
+      <input type="radio" name="tamaño" id="mediana">
+    </li>
+    <li>
+      <label for="grande">Grande</label>
+      <input type="radio" name="tamaño" id="grande" >
+    </li>
+  </ul>
+</section>
+        </fieldset>
+        <fieldset> <!-- DATOS DE ENTGREGA -->
+            <H1>DATOS DE ENTREGA</H1>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" required>
+
+            <label for="address">Dirección</label>
+            <input type="text" id="address" required>
+
+            <label for="tlf">Teléfono</label>
+            <input type="tel" id="tlf" required>
+
+            <label for="comm">Instrucciónes especiales</label>
+            <textarea name="comentarios" id="comm" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset> <!-- METODO DE PAGO -->
+
+          <select name="pago" id="pago">
+            <option value="targeta">Targeta de crédito</option>
+            <option value="moneda">Metálico</option>
+          </select>
+        </fieldset>
+      </form>
+<button>enviar</button>
+  </body>
+</html>

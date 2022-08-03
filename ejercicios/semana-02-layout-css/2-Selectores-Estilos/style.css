@@ -1,0 +1,45 @@
+.lista{
+    display: flex;
+}
+.lista li{
+    margin: 10px;
+}
+.lista li:last-child{
+background-color: rgb(0,0,255);
+}
+.lista li:nth-child(odd){
+    text-decoration: underline 1px green;
+}
+.lista li:nth-child(1):after{
+    content:"😁" ;
+}
+.lista li:nth-child(2):after{
+    content:"😃" ;
+}
+.lista li:nth-child(3):after{
+    content:"😍" ;
+}
+.lista li:nth-child(4):after{
+    content:"😏" ;
+}
+.lista li:nth-child(5):after{
+    content:"❤" ;
+}
+.lista li:nth-child(6):after{
+    content:"🎂" ;
+}
+
+:lang(en){
+    font-size: 200%;
+    text-transform: uppercase;
+}
+
+/* SEGUNDA LISTA */
+
+#provincias{
+    list-style: upper-roman;
+}
+
+#provincias li:nth-child(2){
+    list-style: disc;
+}

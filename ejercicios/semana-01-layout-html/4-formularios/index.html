@@ -4,8 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio HTML 1</title>
+    <title>Formularios</title>
   </head>
 
-  <body></body>
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        <ul>
+          <li>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required autofocus>
+          </li>
+          <li>
+            <label for="correo">Email</label>
+            <input type="email" id="correo" name="correo" required>
+          </li>
+          <li>
+            <label for="pag">Página personal</label>
+            <input type="url" id="pag" name="pag" placeholder="Escribe aquí tu página personal">
+          </li>
+        </ul>
+
+      </fieldset>
+      <fieldset>
+        <legend>Tiempo</legend>
+
+        <ul>
+          <li>
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha">
+          </li>
+          <li>
+            <label for="tiempo">Hora</label>
+            <input type="time" id="tiempo" name="tiempo">
+          </li>
+          <li>
+            <label for="fechahora">fecha y hora</label>
+            <input type="datetime-local" id="fechahora" name="fechahora">
+          </li>
+          <li>
+            <label for="Mes">Mes</label>
+            <input type="month" id="Mes" name="Mes">
+          </li>
+          <li>
+            <label for="semana">Semana</label>
+            <input type="week" id="semana" name="semana">
+          </li>
+          
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Otros</legend>
+        <ul>
+          <li>
+            <label for="telef">Telefono</label>
+            <input type="tel" id="telef" name="telef" value="69420" disabled>
+          </li>
+          <li>
+            <label for="busq">busqueda</label>
+            <input type="search" id="busq" name="busqueda" disabled>
+          </li>
+          <li>
+            <label for="color">Colorsito</label>
+            <input type="color" id="color" name="Colorsitos">
+          </li>
+          <li>
+            <button type="submit" id="superboton"></button>
+            <label for="superboton">TurboBotonSuperGuay</label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
 </html>
